@@ -33,3 +33,8 @@
 
 .ccls-cache/
 
+# project stuff
+client
+server
+async_server
+
