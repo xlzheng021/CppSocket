@@ -1,0 +1,44 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Server with Clang",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++14",
+                "-stdlib=libc++",
+                "async_server.cpp",
+                "-o",
+                "async_server",
+                "--debug"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build Client with Clang",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++14",
+                "-stdlib=libc++",
+                "Client.cpp",
+                "-o",
+                "client",
+                "--debug"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

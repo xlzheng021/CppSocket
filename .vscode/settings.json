@@ -5,5 +5,22 @@
         "memory": "cpp"
     },
     "C_Cpp.clang_format_fallbackStyle": "Google",
-    "C_Cpp.clang_format_path":"/Users/xzheng/Workspaces/Cpp/CppSocket/.clang-format"
+    "C_Cpp.clang_format_path":"/Users/xzheng/Workspaces/Cpp/CppSocket/.clang-format",
+
+    "ccls.launch.command": "/usr/local/bin/ccls",
+    "ccls.cache.directory": "${workspaceFolder}/.ccls-cache/",
+    "ccls.highlight.function.face": ["enabled"],
+    "ccls.highlight.type.face": ["enabled"],
+    "ccls.highlight.variable.face": ["enabled"],
+
+    "ccls.highlight.memberFunction.face": ["function", "member"],
+    "ccls.highlight.memberVariable.face": ["variable", "member"],
+    "ccls.highlight.staticMemberFunction.face": ["function", "static"],
+    "ccls.highlight.staticMemberVariable.face": ["variable", "static"],
+    
+
+    "C_Cpp.autocomplete": "Disabled",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.formatting": "Disabled",
+    "C_Cpp.intelliSenseEngine": "Disabled",
 }

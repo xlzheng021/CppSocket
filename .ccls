@@ -1,0 +1,13 @@
+clang++
+-stdlib=libc++
+%c -std=c11
+%cpp -std=c++14
+%h %hpp --include=Global.h
+-Iinc
+-DMACRO
+-target
+aarch64-linux-gnu
+-isystem/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1
+-isystem/Library/Developer/CommandLineTools/usr/include
+-isystem/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+-isystem/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
